@@ -67,7 +67,7 @@ In this example, we’re using Homebrew to install Astro CLI. Follow the instruc
 $ brew install astronomer/cloud/astrocloud
 ```
 
-[https://www.loom.com/embed/d45fb5f61bc4443e9e83e996d46b2f9d](https://www.loom.com/embed/d45fb5f61bc4443e9e83e996d46b2f9d)
+<WistiaVideo id="uosszw1qul" />
     
 2. **Install and start Docker Desktop**
     
