@@ -80,8 +80,6 @@ $ brew install astronomer/cloud/astrocloud
 3. **Clone the airflow-dbt-cloud repository**
 Open your terminal and clone the [airflow-dbt-cloud repository](https://github.com/sungchun12/airflow-dbt-cloud.git). This contains example Airflow DAGs that you’ll use to orchestrate your dbt Cloud job. Once cloned, navigate into the `airflow-dbt-cloud` project.
     
-    [https://github.com/sungchun12/airflow-dbt-cloud](https://github.com/sungchun12/airflow-dbt-cloud)
-    
     ```bash
     $ git clone https://github.com/sungchun12/airflow-dbt-cloud.git
     $ cd airflow-dbt-cloud
@@ -109,14 +107,13 @@ Open your terminal and clone the [airflow-dbt-cloud repository](https://github.c
         The default Postrgres DB credentials are: postgres:postgres
         ```
         
-    2. **Open the Airflow interface**
+    2. **Open the Airflow interface**:
     Open up a web browser and navigate to the address for the **Airflow Webserver.**
     This will take you to your local instance of Airflow. You’ll need to log in with the **default credentials.**
+
         1. Username: admin
         2. Password: admin
-        
-        ![Screen Shot 2022-04-06 at 3.52.05 PM.png](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Screen_Shot_2022-04-06_at_3.52.05_PM.png)
-        
+        ![Untitled](images/Screen_Shot_2022-04-06_at_3.52.05_PM.png)
     
     [https://www.loom.com/embed/c6c5e37f042b48adb25f67f8a0db51cb](https://www.loom.com/embed/c6c5e37f042b48adb25f67f8a0db51cb)
     
@@ -153,17 +150,16 @@ Now you have all the working pieces to get up and running with Airflow + dbt Clo
 1. Add your dbt Cloud API token as a secure connection
     1. Navigate to Admin and click on Connections
         
-        ![Untitled](images/Screen_Shot_2022-04-06_at_3.52.05_PM.png)
+        ![Untitled](images/Untitled.png)
         
     2. Click on the + sign to add a new connection >> Click on the drop down to search for the dbt Cloud Connection Type
     
-    ![Untitled](images/Untitled.png)
-    
     ![Untitled](images/Untitled_1.png)
+    ![Untitled](images/Untitled_2.png)
     
     c. Add in your connection details and your Account ID default: this is found in your dbt Cloud URL(Account ID 16173 example: https://cloud.getdbt.com/#/accounts/16173/projects/36467/jobs/65767/) 
     
-    ![Untitled](images/Untitled_2.png)
+    ![Untitled](images/dbt_cloud_api_token_connection.png)
     
 2. Add your job_id and account_id config details to the python file: [dbt_cloud_provider_eltml.py](https://github.com/sungchun12/airflow-dbt-cloud/blob/main/dags/dbt_cloud_provider_eltml.py)
     1. You’ll find these details within the dbt Cloud job URL, see the comments in the code snippet below for an example.
