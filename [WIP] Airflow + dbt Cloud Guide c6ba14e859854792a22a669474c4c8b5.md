@@ -1,16 +1,8 @@
-# [WIP] Airflow + dbt Cloud Guide
+# dbt Cloud + Airflow Guide
 
-Created At: March 31, 2022 4:47 PM
-Last Edited At: April 25, 2022 1:47 PM
+**Authors**: Sung Won Chung, Christine Berger
 
-# Key Dates
-
-- **4/25, Monday, official draft**
-- **4/29, Friday, officially ship into devhub guides(production)**
-- Christine, Kyle, Alexis our OOO from 4/11-4/15, they will continue working on this starting 4/18
-
-[Airflow Guide Project Board](https://www.notion.so/a5e53cd86829422796f547c95f338c36)
-
+**Special Thanks**: Kyle Coapman, Alexis Baird, Winnie Winship
 ## Why does this guide matter?
 
 There are a few reasons your team might be considering using Airflow to orchestrate your dbt jobs:
