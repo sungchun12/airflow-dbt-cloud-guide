@@ -23,7 +23,7 @@ There are so many great examples from Gitlab through their open source data engi
 
 This has honestly served as a bridge until the fabled Astronomer + dbt Labs-built dbt Cloud provider became generally available: [here](https://registry.astronomer.io/providers/dbt-cloud?type=Sensors&utm_campaign=Monthly%20Product%20Updates&utm_medium=email&_hsmi=208603877&utm_content=208603877&utm_source=hs_email)
 
-And honestly, there are so many different permutations of this over time.
+And honestly, there are so many different permutations of this over time:
 
 - [Custom Python Scripts](https://github.com/sungchun12/airflow-dbt-cloud/blob/main/archive/dbt_cloud_example.py): This is an airflow DAG based on custom python API utilities [here](https://github.com/sungchun12/airflow-dbt-cloud/blob/main/archive/dbt_cloud_utils.py)
 - [Make API requests directly through the BashOperator based on the docs](https://docs.getdbt.com/dbt-cloud/api-v2#operation/triggerRun): You can make cURL requests to invoke dbt Cloud to do what you want
@@ -35,13 +35,13 @@ These solutions are great, but can be difficult to trust as your team grows and 
 
 ## We’ll show you a better way!
 
-After today’s walkthrough, you’ll get hands-on experience:
+**After today’s walkthrough, you’ll get hands-on experience**:
 
 - Creating a working local Airflow environment
 - Invoking a dbt Cloud job with Airflow (with proof!)
 - Reusing tested and trusted Airflow code for your specific use cases
 
-***and while you’re learning the ropes, you’ll also gain a better understanding of how this helps to:***
+***and while you’re learning the ropes, you’ll also gain a better understanding of how this helps to***:
 
 - Reduce the cognitive load when building and maintaining pipelines
 - Avoid dependency hell (think: pip install conflicts
@@ -62,12 +62,12 @@ After today’s walkthrough, you’ll get hands-on experience:
 Astro is a managed software service that includes key features for teams working with Airflow. In order to use Astro, we’ll install the Astro CLI, which will give us access to useful commands for working with Airflow locally. You can read more about Astro [here](https://docs.astronomer.io/astro/).
 
 In this example, we’re using Homebrew to install Astro CLI. Follow the instructions to install the Astro CLI for your own operating system [here](https://docs.astronomer.io/astro/install-cli).
-    
-    ```bash
-    $ brew install astronomer/cloud/astrocloud
-    ```
-    
-    [https://www.loom.com/embed/d45fb5f61bc4443e9e83e996d46b2f9d](https://www.loom.com/embed/d45fb5f61bc4443e9e83e996d46b2f9d)
+
+```bash
+$ brew install astronomer/cloud/astrocloud
+```
+
+[https://www.loom.com/embed/d45fb5f61bc4443e9e83e996d46b2f9d](https://www.loom.com/embed/d45fb5f61bc4443e9e83e996d46b2f9d)
     
 2. **Install and start Docker Desktop**
     
