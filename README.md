@@ -153,17 +153,17 @@ Now you have all the working pieces to get up and running with Airflow + dbt Clo
 1. Add your dbt Cloud API token as a secure connection
     1. Navigate to Admin and click on Connections
         
-        ![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled.png)
+        ![Untitled](images/Screen_Shot_2022-04-06_at_3.52.05_PM.png)
         
     2. Click on the + sign to add a new connection >> Click on the drop down to search for the dbt Cloud Connection Type
     
-    ![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled%201.png)
+    ![Untitled](images/Untitled.png)
     
-    ![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled%202.png)
+    ![Untitled](images/Untitled_1.png)
     
     c. Add in your connection details and your Account ID default: this is found in your dbt Cloud URL(Account ID 16173 example: https://cloud.getdbt.com/#/accounts/16173/projects/36467/jobs/65767/) 
     
-    [https://lh3.googleusercontent.com/sRxe5xbv_LYhIKblc7eiY7AmByr1OibOac2_fIe54rpU3TBGwjMpdi_j0EPEFzM1_gNQXry7Jsm8aVw9wQBSNs1I6Cyzpvijaj0VGwSnmVf3OEV8Hv5EPOQHrwQgK2RhNBdyBxN2](https://lh3.googleusercontent.com/sRxe5xbv_LYhIKblc7eiY7AmByr1OibOac2_fIe54rpU3TBGwjMpdi_j0EPEFzM1_gNQXry7Jsm8aVw9wQBSNs1I6Cyzpvijaj0VGwSnmVf3OEV8Hv5EPOQHrwQgK2RhNBdyBxN2)
+    ![Untitled](images/Untitled_2.png)
     
 2. Add your job_id and account_id config details to the python file: [dbt_cloud_provider_eltml.py](https://github.com/sungchun12/airflow-dbt-cloud/blob/main/dags/dbt_cloud_provider_eltml.py)
     1. You’ll find these details within the dbt Cloud job URL, see the comments in the code snippet below for an example.
@@ -188,11 +188,11 @@ Now you have all the working pieces to get up and running with Airflow + dbt Clo
     
     ![image](images/untiled_9.png)
     
-    ![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled%203.png)
+    ![Untitled](images/Untitled_3.png)
     
-    ![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled%204.png)
+    ![Untitled](images/Untitled_4.png)
     
-    [https://lh6.googleusercontent.com/S9QdGhLAdioZ3x634CChugsJRiSVtTTd5CTXbRL8ADA6nSbAlNn4zV0jb3aC946c8SGi9FRTfyTFXqjcM-EBrJNK5hQ0HHAsR5Fj7NbdGoUfBI7xFmgeoPqnoYpjyZzRZlXkjtxS](https://lh6.googleusercontent.com/S9QdGhLAdioZ3x634CChugsJRiSVtTTd5CTXbRL8ADA6nSbAlNn4zV0jb3aC946c8SGi9FRTfyTFXqjcM-EBrJNK5hQ0HHAsR5Fj7NbdGoUfBI7xFmgeoPqnoYpjyZzRZlXkjtxS)
+    ![Untitled](images/dbt_cloud_success.png)
     
 
 ## How do I rerun the dbt Cloud job and downstream tasks in my pipeline?
@@ -203,17 +203,17 @@ This section of the tutorial will show you how to restart the job directly from 
 
 1. Click on the task
 
-![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled%205.png)
+![Untitled](images/Untitled_5.png)
 
-1. Clear the task instance
+2. Clear the task instance
 
-![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled%206.png)
+![Untitled](images/Untitled_6.png)
 
-![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled%207.png)
+![Untitled](images/Untitled_7.png)
 
-1. Watch it rerun in real time
+3. Watch it rerun in real time
 
-![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled%208.png)
+![Untitled](images/Untitled_8.png)
 
 # Ending the Tutorial
 
