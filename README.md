@@ -75,7 +75,7 @@ $ brew install astronomer/cloud/astrocloud
     
     Follow the instructions [here](https://docs.docker.com/desktop/) to install Docker desktop for your own operating system. Once Docker is installed, ensure you have it up and running for the next steps.
     
-    [https://www.loom.com/embed/43fb0929154c4af9925bc035410e2fa8](https://www.loom.com/embed/43fb0929154c4af9925bc035410e2fa8)
+    <WistiaVideo id="qr84pa8k9f" />
     
 3. **Clone the airflow-dbt-cloud repository**
 Open your terminal and clone the [airflow-dbt-cloud repository](https://github.com/sungchun12/airflow-dbt-cloud.git). This contains example Airflow DAGs that you’ll use to orchestrate your dbt Cloud job. Once cloned, navigate into the `airflow-dbt-cloud` project.
@@ -85,7 +85,7 @@ Open your terminal and clone the [airflow-dbt-cloud repository](https://github.c
     $ cd airflow-dbt-cloud
     ```
     
-    [https://www.loom.com/embed/77309b4375c640198c5557216642df93](https://www.loom.com/embed/77309b4375c640198c5557216642df93)
+<WistiaVideo id="oo1yel115i" />
     
 4. **Start the Docker container**
     1. Run the following command to spin up the Docker container and start your local Airflow deployment:
@@ -115,13 +115,13 @@ Open your terminal and clone the [airflow-dbt-cloud repository](https://github.c
         2. Password: admin
         ![Untitled](images/Screen_Shot_2022-04-06_at_3.52.05_PM.png)
     
-    [https://www.loom.com/embed/c6c5e37f042b48adb25f67f8a0db51cb](https://www.loom.com/embed/c6c5e37f042b48adb25f67f8a0db51cb)
+    <WistiaVideo id="2rzsjo0uml" />
     
 5. **Create a dbt Cloud service token**
     
     Create a service token from within dbt Cloud using the instructions [found here](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens). Ensure that you save a copy of the token, as you won’t be able to access this later. In this example we use `Account Admin`, but you can also use `Job Admin` instead for token permissions.
     
-    [https://www.loom.com/embed/6f02f871a3ae4f6bad302d8e03a1aa72](https://www.loom.com/embed/6f02f871a3ae4f6bad302d8e03a1aa72)
+    <WistiaVideo id="amubh6qmwq" />
     
 6. **Create a dbt Cloud job**
     
@@ -136,16 +136,16 @@ Open your terminal and clone the [airflow-dbt-cloud repository](https://github.c
         ```
         
     
-    [https://www.loom.com/embed/93439be726424bbba43f9b7be64d853d](https://www.loom.com/embed/93439be726424bbba43f9b7be64d853d)
+    <WistiaVideo id="qiife5rzlp" />
     
 
 ## Run the Airflow + dbt Cloud DAG
 
-[https://www.loom.com/share/9d192a4cd0014517ad5aa5380a01a6c7](https://www.loom.com/share/9d192a4cd0014517ad5aa5380a01a6c7)
+<WistiaVideo id="wgy7wvgqof" />
 
 Now you have all the working pieces to get up and running with Airflow + dbt Cloud. Let’s dive into make this all work together.  We will **set up a connection** and **run a DAG in Airflow** that kicks off a dbt Cloud.
 
-**Loom video: [here](https://www.loom.com/share/8214136dd9ca4208b7e6c38ea79d70ad)**
+<WistiaVideo id="oo1yel115i" />
 
 1. Add your dbt Cloud API token as a secure connection
     1. Navigate to Admin and click on Connections
@@ -239,7 +239,7 @@ airflow-dbt-cloud_e3fe3c-scheduler-1    exited
 airflow-dbt-cloud_e3fe3c-postgres-1     exited
 ```
 
-[https://www.loom.com/embed/42f9ad3270d6442e9b602a622df03231](https://www.loom.com/embed/42f9ad3270d6442e9b602a622df03231)
+<WistiaVideo id="u83nuqegn9" />
 
 # FAQs
 
@@ -257,7 +257,7 @@ The questions to the Professional Services team aren’t centered around the set
         - Avoid building your own parsing logic
         - Get clear logs on what models you're rerunning in dbt Cloud(without hard coding step override commands)
     
-    [https://www.loom.com/share/a8f3724ee3884414a96943a3d0752b96](https://www.loom.com/share/a8f3724ee3884414a96943a3d0752b96)
+    <WistiaVideo id="fn3ib5ew8y" />
     
 3. Do you have any best practice recommendations for dbt orchestration with Airflow? (+1 from Alexis on this as well)
     1. Should Airflow run one big dbt job or many dbt jobs?
@@ -275,23 +275,3 @@ The questions to the Professional Services team aren’t centered around the set
     1. Yes, either through [airflow email/slack](https://www.astronomer.io/guides/error-notifications-in-airflow/) functionality AND/OR [dbt Cloud notifications](https://docs.getdbt.com/docs/dbt-cloud/using-dbt-cloud/cloud-notifications) which supports email and slack notifications
 7. Are there decision criteria for how to best work with dbt Cloud and airflow?
     1. Check out this talk: [here](https://www.youtube.com/watch?v=n7IIThR8hGk)
-
-### Wistia videos
-
-[https://getdbt.wistia.com/medias/uosszw1qul](https://getdbt.wistia.com/medias/uosszw1qul)
-
-[https://getdbt.wistia.com/medias/qr84pa8k9f](https://getdbt.wistia.com/medias/qr84pa8k9f)
-
-[https://getdbt.wistia.com/medias/oo1yel115i](https://getdbt.wistia.com/medias/oo1yel115i)
-
-[https://getdbt.wistia.com/medias/2rzsjo0uml](https://getdbt.wistia.com/medias/2rzsjo0uml)
-
-[https://getdbt.wistia.com/medias/amubh6qmwq](https://getdbt.wistia.com/medias/amubh6qmwq)
-
-[https://getdbt.wistia.com/medias/qiife5rzlp](https://getdbt.wistia.com/medias/qiife5rzlp)
-
-[https://getdbt.wistia.com/medias/wgy7wvgqof](https://getdbt.wistia.com/medias/wgy7wvgqof)
-
-[https://getdbt.wistia.com/medias/u83nuqegn9](https://getdbt.wistia.com/medias/u83nuqegn9)
-
-[https://getdbt.wistia.com/medias/fn3ib5ew8y](https://getdbt.wistia.com/medias/fn3ib5ew8y)
