@@ -186,7 +186,7 @@ Now you have all the working pieces to get up and running with Airflow + dbt Clo
     
 3. Turn on the DAG and verify the job succeeded after running. Note: screenshots taken from different job runs, but the user experience is consistent.
     
-    [https://lh6.googleusercontent.com/p8AqQRy0UGVLjDGPmcuGYmQ_BRodyL0Zis-eQgSmp69EHbKW51o4S-bCl1fXHlOmwpYEBxD0A-O1Q1hwt-VDVMO1wWH-AIeaoelBx06JXRJ0m1OcHaPpFKH0xDiduIhNlQhhbLiy](https://lh6.googleusercontent.com/p8AqQRy0UGVLjDGPmcuGYmQ_BRodyL0Zis-eQgSmp69EHbKW51o4S-bCl1fXHlOmwpYEBxD0A-O1Q1hwt-VDVMO1wWH-AIeaoelBx06JXRJ0m1OcHaPpFKH0xDiduIhNlQhhbLiy)
+    ![image](images/untiled_9.png)
     
     ![Untitled](%5BWIP%5D%20Airflow%20+%20dbt%20Cloud%20Guide%20c6ba14e859854792a22a669474c4c8b5/Untitled%203.png)
     
